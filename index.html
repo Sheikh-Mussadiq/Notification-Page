@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+</head>
+<body>
+  <main class="container">
+    <header class="header row">
+      <h1 class="title">Notifications <span class="number" id="notifications-count">3</span></h1>
+      <button class="mark-all-as-read btn" id="mark-all-as-read">Mark all as read</button>
+    </header>
+
+    <section class="notifications">
+      <article class="notification unread">
+        <div class="profile-picture">
+          <img src="assets/images/avatar-mark-webber.webp" alt="Mark Webber's profile picture">
+        </div>
+        <div class="notification-info">
+            <p class="name">Mark Webber <span class="status">reacted to your recent post</span> <span class="message">My first tournament today!</span> <span class="red-dot" id="red-dot"><img class="red-dot-image" src="./assets/images/icons8-red-circle-emoji-70.png" alt=""></span></p>
+          <div class="time">
+            <p class="time-ago">1m ago</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="notification unread">
+        <div class="profile-picture">
+          <img src="assets/images/avatar-angela-gray.webp" alt="Angela Gray's profile picture">
+        </div>
+        <div class="notification-info">          
+            <p class="name">Angela Gray <span class="status">followed you</span> <span class="message"></span><span class="red-dot" id="red-dot"><img class="red-dot-image" src="./assets/images/icons8-red-circle-emoji-70.png" alt=""></span></p>
+          <div class="time">
+            <p class="time-ago">5m ago</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="notification unread">
+        <div class="profile-picture">
+          <img src="assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson's profile picture">
+        </div>
+        <div class="notification-info">
+            <p class="name">Jacob Thompson <span class="status">has joined your group</span> <span class="message message-type-group">Chess Club</span><span class="red-dot" id="red-dot"><img class="red-dot-image" src="./assets/images/icons8-red-circle-emoji-70.png" alt=""></span></p>
+          <div class="time">
+            <p class="time-ago">1 day ago</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="notification">
+        <div class="profile-picture">
+          <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin's profile picture">
+        </div>
+        <div class="notification-info">
+            <p class="name">Rizky Hasanuddin <span class="status">sent you a private message</span> <span class="message"></span></p>         
+          <div class="time">
+            <p class="time-ago">5 days ago</p>
+          </div>
+          <div class="message-box">
+            <p class="message-text">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="notification">
+        <div class="profile-picture">
+          <img src="assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith's profile picture">
+        </div>
+        <div class="notification-info">
+            <p class="name">Kimberly Smith <span class="status">commented on your picture</span> <span class="message"></span></p>          
+          <div class="time">
+            <p class="time-ago">1 week ago</p>
+          </div>
+        </div>
+        <div class="square-image">
+          <a href="#">
+            <img src="assets/images/image-chess.webp" alt="Kimberly Smith's profile picture">
+          </a>
+        </div>
+      </article>
+
+      <article class="notification">
+        <div class="profile-picture">
+          <img src="assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson's profile picture">
+        </div>
+        <div class="notification-info">
+            <p class="name">Nathan Peterson <span class="status">reacted to your recent post</span> <span class="message">5 end-game strategies to increase your win rate</span></p>
+          <div class="time">
+            <p class="time-ago">2 weeks ago</p>
+          </div>
+        </div>
+      </article> 
+
+      <article class="notification">
+        <div class="profile-picture">
+          <img src="assets/images/avatar-anna-kim.webp" alt="Anna Kim's profile picture">
+        </div>
+        <div class="notification-info">
+            <p class="name">Anna Kim <span class="status">left the group</span> <span class="message message-type-group">Chess Club</span></p>
+          <div class="time">
+            <p class="time-ago">2 weeks ago</p>
+          </div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+<footer>
+  <div class="attribution">
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/sheikh-mussadiq">Sheikh-Mussadiq</a>.
+    </p>
+  </div>
+</footer>  
+</body>
+<script src="script.js"></script>
+</html>

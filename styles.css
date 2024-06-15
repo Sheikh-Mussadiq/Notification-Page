@@ -1,0 +1,173 @@
+:root {
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    background-color: var(--Very-light-grayish-blue);
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.header {
+    padding: 1rem 0;
+}
+.title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--Very-dark-blue);
+}
+.number {
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: var(--Blue);
+    color: var(--White);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--Dark-grayish-blue);
+    margin-left: auto;
+}
+.btn:hover {
+    color: var(--Blue);
+}
+.notifications {
+    padding: 2rem 0;
+}
+.notification {
+    display: grid;
+    grid-template-columns: 3.2rem 1fr 3.2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.red-dot-image {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    margin-left: 0.2rem;
+}
+.notification:last-child {
+    margin-bottom: 0;
+}
+.profile-picture {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.notification-info {
+    margin-left: 1rem;
+}
+.name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--Very-dark-blue);
+}
+.name:hover {
+    color: var(--Blue);
+    cursor: pointer;
+}
+.status {
+    font-weight: 500;
+    margin-left: 0.2rem;
+    color: var(--Dark-grayish-blue);
+}
+.message { 
+    color: var(--Dark-grayish-blue);   
+}
+.message:hover {
+    color: var(--Blue);
+    cursor: pointer;
+}
+.message-type-group {
+    color: var(--Blue);   
+}
+.message-box {
+    border: 1px solid var(--Light-grayish-blue-2);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+}
+.message-box:hover {
+    background-color: var(--Light-grayish-blue-1);
+    cursor: pointer;
+}
+.message-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--Dark-grayish-blue);
+}
+.time-ago {
+    margin-top: 0.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--Grayish-blue);
+}
+.unread {
+    background-color: var(--Light-grayish-blue-1);
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        padding: 1.5rem 0;
+    }
+    .container {
+        max-width: 700px;
+        background-color: var(--White);
+        margin: 2rem auto;
+        border-radius: 10px;
+    }
+    
+}
+.attribution { 
+    color: var(--Grayish-blue);
+    font-size: 11px; 
+    text-align: center;
+    margin-bottom: 1rem; 
+}
+.attribution a {
+    text-decoration: none; 
+    color: var(--Grayish-blue); 
+}
+.attribution a:hover {
+    text-decoration: underline;
+    color: var(--Blue);
+}
